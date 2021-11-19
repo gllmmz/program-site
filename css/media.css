@@ -1,0 +1,113 @@
+@media(max-width:1100px){
+    .header__discription{
+        justify-content: space-evenly;
+    }
+    header{
+        padding: 100px 15px;
+    }
+    .about-me__elements p{
+        padding: 0;
+    }
+}
+@media(max-width:768px){
+    .header__elements p{
+        font-size: 48px;
+        line-height: 54px;
+        padding: 30px 0;
+    }
+    h1{
+        font-size: 56px;
+        line-height: 62px;
+    
+    }
+    hr{
+        height: 6px;
+    }
+    .header__discription p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header__discription a{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    h3{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .item{
+        grid-column: span 3;
+    }
+    .main{
+        grid-template-rows: repeat(6,minmax(150px,350px));
+    }
+    .item br{
+        display: block;
+    }
+    .feedback{
+        padding: 0 16px;
+    }
+    .feedback h2{
+        font-size: 56px;
+        line-height: 62px;
+    }
+    form{
+        display: grid;
+        grid-template-areas:
+        'label-name'
+        'name'
+        'label-email'
+        'email'
+        'label-sms'
+        'sms'
+        'button ' 
+        ;
+        grid-template-rows: minmax(auto, auto) 64px minmax(auto, auto) 64px minmax(auto, auto) 302px 64px;
+        grid-gap: 20px;
+    }
+    footer{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media(max-width:425px){
+    .header__elements p{
+        font-size: 32px;
+        line-height: 38px;
+        padding: 30px 0;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 46px;
+    
+    }
+    hr{
+        height: 4px;
+    }
+    .header__discription p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header__discription a{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .main{
+        grid-template-rows: repeat(6,minmax(150px,250px));
+    }
+    .about-me__elements h2, .feedback h2{
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .about-me__elements p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    input, label, textarea, button{
+        width: 100%;
+    }
+    footer{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
